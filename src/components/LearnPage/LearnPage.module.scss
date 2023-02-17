@@ -1,0 +1,46 @@
+@import "../../styles/mixins.scss";
+
+.learnPage {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  a {
+    display: flex;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+
+    box-shadow: 0 15px 30px -10px transparentize(#000, 0.9);
+    border-radius: 5px;
+    border-style: solid;
+    box-sizing: border-box;
+
+
+    @include defaultFont;
+
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+
+    color: #212121;
+    cursor: pointer;
+
+    width: 250px;
+    height: 50px;
+
+    transition: 0.3s;
+
+
+    &:hover {
+      transform: scale(1.05);
+
+    }
+  }
+
+
+}

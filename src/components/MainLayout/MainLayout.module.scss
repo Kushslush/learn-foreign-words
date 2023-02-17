@@ -1,0 +1,18 @@
+@import "../../styles/nullstyle.scss";
+
+
+.mainLayout {
+  display: flex;
+  flex-direction: column;
+  background-color: #edecea;
+  overflow: hidden;
+
+
+  &Content {
+    display: flex;
+    height: 95vh;
+    background-color: #edecea;
+    overflow: hidden;
+
+  }
+}

@@ -1,0 +1,58 @@
+@import "../../styles/nullstyle.scss";
+@import "../../styles/mixins.scss";
+
+
+.header {
+  display: flex;
+  width: 100%;
+  height: 5vh;
+
+  &Logo {
+    margin-left: 50px;
+    width: 70px;
+    height: 70px;
+  }
+
+  &Navigation {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  ul {
+    display: flex;
+    height: 70px;
+  }
+
+  & li {
+    display: flex;
+    list-style-type: none;
+    width: 100px;
+    height: 70px;
+    float: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.4s;
+  }
+
+  & li:hover {
+    transform: scale(1.1);
+
+    box-shadow: inset 0 -3px 0 0 black;
+  }
+
+  & a {
+
+    @include defaultFont;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+}
+
+

@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+/*--------------------*/
+.header {
+  display: flex;
+  width: 100%;
+  height: 5vh;
+}
+.headerLogo {
+  margin-left: 50px;
+  width: 70px;
+  height: 70px;
+}
+.headerNavigation {
+  display: flex;
+  margin: 0 auto;
+}
+.header ul {
+  display: flex;
+  height: 70px;
+}
+.header li {
+  display: flex;
+  list-style-type: none;
+  width: 100px;
+  height: 70px;
+  float: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.4s;
+}
+.header li:hover {
+  transform: scale(1.1);
+  box-shadow: inset 0 -3px 0 0 black;
+}
+.header a {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/*# sourceMappingURL=Header.module.css.map */

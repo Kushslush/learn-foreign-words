@@ -1,0 +1,21 @@
+
+.button {
+  background: #fff;
+  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  border-style: solid;
+  box-sizing: border-box;
+
+  text-transform: uppercase;
+  color: #212121;
+  cursor: pointer;
+  display: inline-block;
+  width: 250px;
+  height: 50px;
+  transition: 0.3s;
+}
+.button:hover {
+  transform: scale(1.05);
+}
+
+/*# sourceMappingURL=Button.module.css.map */

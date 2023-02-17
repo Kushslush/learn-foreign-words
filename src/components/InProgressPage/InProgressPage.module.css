@@ -1,0 +1,10 @@
+.in_progress_page {
+  display: flex;
+  margin: auto auto;
+}
+.in_progress_page h1 {
+  font-size: 50px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+/*# sourceMappingURL=InProgressPage.module.css.map */

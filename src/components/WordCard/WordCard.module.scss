@@ -1,0 +1,110 @@
+@mixin cardBorderRadius {
+  border-radius: 26px;
+}
+
+@mixin cardSize {
+  height: 300px;
+  width: 500px;
+}
+
+@mixin defaultSideSettings {
+  @include cardBorderRadius;
+
+  font-size: 60px;
+  background-color: #EFDCCE;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  backface-visibility: hidden;
+
+  box-shadow: 0 15px 50px -10px transparentize(#000, 0.9);
+
+}
+
+.card_wrapper_animated {
+  display: flex;
+  perspective: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  @include cardSize;
+
+
+  .card {
+    @include cardSize;
+    @include cardBorderRadius;
+
+    position: relative;
+    cursor: pointer;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+    transform-style: preserve-3d;
+
+    .front {
+      @include defaultSideSettings;
+      text-align: center;
+      z-index: 2;
+    }
+
+    .back {
+      @include defaultSideSettings;
+      transform: rotateX(180deg);
+      text-align: center;
+    }
+
+  }
+
+  &_flipped {
+    .card {
+      transform: rotateX(180deg);
+    }
+
+  }
+}
+
+.card_wrapper {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  @include cardSize;
+
+
+  .card {
+    @include cardSize;
+    @include cardBorderRadius;
+
+
+    position: relative;
+    cursor: pointer;
+    transition-timing-function: ease-in-out;
+    transform-style: preserve-3d;
+
+    .front {
+      @include defaultSideSettings;
+      text-align: center;
+      z-index: 2;
+    }
+
+    .back {
+      @include defaultSideSettings;
+      transform: rotateX(180deg);
+      text-align: center;
+    }
+
+  }
+
+  &_flipped {
+    .card {
+      transform: rotateX(180deg);
+    }
+
+  }
+}

@@ -1,0 +1,38 @@
+.memoryCardsPage {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.memoryCardsPage h1 {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 40px;
+}
+.memoryCardsPage_selectContainer {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.memoryCardsPage_buttonContainer {
+  display: flex;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  justify-content: space-between;
+}
+.memoryCardsPage_middleButtonContainer {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+/*# sourceMappingURL=MemoryCardsPage.module.css.map */

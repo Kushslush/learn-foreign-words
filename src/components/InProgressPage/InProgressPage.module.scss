@@ -1,0 +1,12 @@
+@import "../../styles/mixins.scss";
+
+.in_progress_page {
+  display: flex;
+  margin: auto auto;
+
+  h1 {
+    font-size: 50px;
+    @include defaultFont;
+
+  }
+}
